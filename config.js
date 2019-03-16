@@ -254,28 +254,11 @@ var CONFIG = {
                items: [
                   {
                      position: [0, 0],
-                     width: 2,
-                     title: 'Short instruction',
-                     type: TYPES.TEXT_LIST,
-                     id: {}, // using empty object for an unknown id
-                     state: false, // disable state element
-                     list: [
-                        {
-                           title: 'Read',
-                           icon: 'mdi-numeric-1-box-outline',
-                           value: 'README.md'
-                        },
-                        {
-                           title: 'Ask on forum',
-                           icon: 'mdi-numeric-2-box-outline',
-                           value: 'home-assistant.io'
-                        },
-                        {
-                           title: 'Open an issue',
-                           icon: 'mdi-numeric-3-box-outline',
-                           value: 'github.com'
-                        }
-                     ]
+                     type: TYPES.IFRAME,
+                     id: {},
+                     width: 3,
+                     height: 3,
+                     url: 'https://www.windy.com/'
                   }
                ]
             },
