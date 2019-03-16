@@ -191,7 +191,7 @@ var CONFIG = {
                     width: 2,
                     height: 2,
                     id: 'media_player.spotify',
-                    type: TYPES.MEDIA_PLAYER,
+                    type: TYPES.MEDIA_PLAYER_CUSTOM,
                     hideSource: false,
                     hideMuteButton: true,
                     hideVolumeSlider : false,
