@@ -69,35 +69,16 @@ var CONFIG = {
          groups: [
             {
                title: 'First group',
-               width: 2,
+               width: 3,
                height: 3,
                items: [
                   {
                      position: [0, 0],
-                     width: 2,
-                     type: TYPES.TEXT_LIST,
-                     id: {}, // using empty object for an unknown id
-                     state: false, // disable state element
-                     list: [
-                        {
-                           title: 'Sun.sun state',
-                           icon: 'mdi-weather-sunny',
-                           value: '&sun.sun.state'
-                        },
-                        {
-                           title: 'Custom',
-                           icon: 'mdi-clock-outline',
-                           value: 'value'
-                        }
-                     ]
-                  },
-                  {
-                     position: [0, 1],
                      type: TYPES.IFRAME,
                      id: {},
-                     width: 2,
-                     height: 2,
-                     url: 'https://embed.windy.com/embed2.html?lat=49.990&lon=8.422&zoom=5&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=49.990&detailLon=8.422&metricWind=default&metricTemp=default&radarRange=-1'
+                     width: 3,
+                     height: 3,
+                     url: 'https://embed.windy.com/embed2.html?lat=49.870&lon=9.673&zoom=8&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=true&detailLat=50.174&detailLon=9.673&metricWind=default&metricTemp=default&radarRange=-1'
                   }
                ]
             },
