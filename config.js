@@ -92,7 +92,7 @@ var CONFIG = {
                      ]
                   },
                   {
-                     position: [0, 0],
+                     position: [0, 1],
                      type: TYPES.IFRAME,
                      id: {},
                      width: 2,
