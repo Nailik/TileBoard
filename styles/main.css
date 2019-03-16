@@ -1547,6 +1547,11 @@ camera-thumbnail div {
 .media-player-custom-table--space {
   height: 50%;
 }
+.media-player-custom-table.-has-subtitle .media-player-custom-table--td-mute {
+  padding-top: 21px;
+  width: 32px;
+  height: 32px;
+}
 .media-player-table table th,
 .media-player-table table td {
   padding: 0;
