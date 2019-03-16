@@ -257,8 +257,9 @@ var CONFIG = {
                      type: TYPES.IFRAME,
                      id: {},
                      width: 3,
-                     height: 3,
-                     url: 'https://www.windy.com/'
+                     height: 2,
+                     refresh: 10000, // 10 seconds
+                     url: 'https://www.youtube.com/embed/_qNhxxo9rVU?autoplay=1'
                   }
                ]
             },
