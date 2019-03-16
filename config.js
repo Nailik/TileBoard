@@ -78,7 +78,7 @@ var CONFIG = {
                      id: {},
                      width: 3,
                      height: 3,
-                     url: 'https://embed.windy.com/embed2.html?lat=49.870&lon=9.673&zoom=8&level=surface&overlay=temp&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=true&detailLat=50.174&detailLon=9.673&metricWind=default&metricTemp=default&radarRange=-1'
+                     url: 'https://embed.windy.com/embed2.html?lat=50.507&lon=9.682&zoom=11&level=surface&overlay=temp&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=true&detailLat=50.566&detailLon=9.676&metricWind=default&metricTemp=default&radarRange=-1'
                   }
                ]
             },
