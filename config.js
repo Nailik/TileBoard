@@ -259,7 +259,7 @@ var CONFIG = {
                      width: 3,
                      height: 2,
                      refresh: 10000, // 10 seconds
-                     url: 'https://www.youtube.com/embed/_qNhxxo9rVU?autoplay=1'
+                     url: 'https://www.windy.com/?49.990,8.422,5'
                   }
                ]
             },
