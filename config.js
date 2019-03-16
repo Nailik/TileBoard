@@ -259,7 +259,7 @@ var CONFIG = {
                      width: 3,
                      height: 2,
                      refresh: 10000, // 10 seconds
-                     url: 'https://www.windy.com/?49.990,8.422,5'
+                     url: 'https://embed.windy.com/embed2.html?lat=49.990&lon=8.422&zoom=5&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=49.990&detailLon=8.422&metricWind=default&metricTemp=default&radarRange=-1'
                   }
                ]
             },
