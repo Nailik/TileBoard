@@ -1544,6 +1544,9 @@ camera-thumbnail div {
   padding: 0;
   border: 0;
 }
+.media-player-custom-table--space {
+  height: 50%;
+}
 .media-player-table table th,
 .media-player-table table td {
   padding: 0;
