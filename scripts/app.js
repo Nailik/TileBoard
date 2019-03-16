@@ -53,6 +53,7 @@ var TYPES = {
    WEATHER: 'weather',
    CLIMATE: 'climate',
    MEDIA_PLAYER: 'media_player',
+   MEDIA_PLAYER_TOGGLE: 'media_player_toggle',
    CUSTOM: 'custom',
    ALARM: 'alarm',
    WEATHER_LIST: 'weather_list',

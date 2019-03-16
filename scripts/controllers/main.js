@@ -41,6 +41,8 @@ function MainController ($scope, $location) {
          case TYPES.LIGHT:
          case TYPES.FAN:
          case TYPES.INPUT_BOOLEAN: return $scope.toggleSwitch(item, entity);
+         
+         case TYPES.MEDIA_PLAYER_TOGGLE: return $scope.togglePlayer(item, entity);
 
          case TYPES.LOCK: return $scope.toggleLock(item, entity);
          case TYPES.COVER_TOGGLE: return $scope.toggleCover(item, entity);
@@ -932,6 +934,22 @@ function MainController ($scope, $location) {
             entity_id: item.id
          }
       }, callback);
+   };
+
+   $scope.togglePlayer = function (item, entity, callback) {
+      
+      var service = "";
+      if(entity.state === "off") service = "turn_on";
+      else if(entity.state !== "off") service = "turn_off";
+            
+      sendItemData(item, {
+         type: "call_service",
+         domain: "media_player",
+         service: service,
+         service_data: {
+            entity_id: item.id
+         }
+      });
    };
 
    $scope.dimmerToggle = function (item, entity, callback) {

@@ -483,6 +483,7 @@ body {
 .item-clickable {
   display: none;
 }
+.item.-media_player_toggle,
 .item.-switch,
 .item.-lock,
 .item.-cover_toggle,
@@ -509,6 +510,7 @@ body {
          border: 2px solid rgba(200,200,200,.6);
       }*/
 }
+.item.-media_player_toggle:active,
 .item.-switch:active,
 .item.-lock:active,
 .item.-cover_toggle:active,
@@ -532,6 +534,7 @@ body {
   margin-left: -2px;
   border: 2px solid rgba(200, 200, 200, 0.9);
 }
+.item.-media_player_toggle .item-clickable,
 .item.-switch .item-clickable,
 .item.-lock .item-clickable,
 .item.-cover_toggle .item-clickable,
