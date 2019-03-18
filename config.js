@@ -68,7 +68,7 @@ var CONFIG = {
          icon: 'mdi-home-outline', // home icon
          groups: [
             {
-               title: 'First group',
+               title: 'Wetter',
                width: 3,
                height: 3,
                items: [
@@ -84,7 +84,7 @@ var CONFIG = {
             },
 
             {
-               title: 'Temperatures',
+               title: 'Temperature',
                width: 1,
                height: 3,
                items: [
@@ -116,8 +116,8 @@ var CONFIG = {
             },
 
             {
-               title: 'third group',
-               width: 3,
+               title: 'Media',
+               width: 4,
                height: 3,
                items: [
                   {
@@ -133,6 +133,19 @@ var CONFIG = {
                     subtitle: '@attributes.media_title',
                     bgSuffix: '@attributes.entity_picture',
                 },
+                {
+                  position: [2, 0],
+                  width: 2,
+                  height: 2,
+                  id: 'media_player.kd_65xf9005',
+                  type: TYPES.MEDIA_PLAYER_CUSTOM,
+                  hideSource: false,
+                  hideMuteButton: true,
+                  hideVolumeSlider : false,
+                  //state: '@attributes.media_title',
+                  subtitle: '@attributes.media_title',
+                  bgSuffix: '@attributes.entity_picture',
+              },
                ]
             },
             {
@@ -162,7 +175,7 @@ var CONFIG = {
                      title: 'Netflix',
                   },
                   {
-                     position: [1, 0],
+                     position: [0, 2],
                      width: 1,
                      type: TYPES.SCRIPT,
                      bg: 'icons/icon-netflix.png',
