@@ -84,50 +84,32 @@ var CONFIG = {
             },
 
             {
-               title: 'Second group',
+               title: 'Temperatures',
                width: 1,
                height: 3,
                items: [
                   {
                      position: [0, 0],
-                     width: 1,
-                     type: TYPES.SLIDER,
-                     //id: "input_number.volume",
-                     id: {state: 50}, // replace it with real string id
-                     state: false,
-                     title: 'Custom slider',
-                     subtitle: 'Example of subtitle',
-                     slider: {
-                        min: 0,
-                        max: 100,
-                        step: 2,
-                        request: {
-                           type: "call_service",
-                           domain: "input_number",
-                           service: "set_value",
-                           field: "value"
-                        }
+                     title: 'Schlafzimmer',
+                     id: "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1",
+                     type: TYPES.CLIMATE,
+                     unit: 'C',
+                     state: function (item, entity) {
+                        return 'Current '
+                           + entity.attributes.current_temperature
+                           + entity.attributes.unit_of_measurement;
                      }
                   },
                   {
                      position: [0, 1],
-                     type: TYPES.ALARM,
-                     //id: "alarm_control_panel.home_alarm",
-                     id: { state: 'disarmed' }, // replace it with real string id
-                     title: 'Home Alarm',
-                     icons: {
-                        disarmed: 'mdi-bell-off',
-                        pending: 'mdi-bell',
-                        armed_home: 'mdi-bell-plus',
-                        armed_away: 'mdi-bell',
-                        triggered: 'mdi-bell-ring'
-                     },
-                     states: {
-                        disarmed: 'Disarmed',
-                        pending: 'Pending',
-                        armed_home: 'Armed home',
-                        armed_away: 'Armed away',
-                        triggered: 'Triggered'
+                     title: 'Wohnzimmer',
+                     id: "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_2",
+                     type: TYPES.CLIMATE,
+                     unit: 'C',
+                     state: function (item, entity) {
+                        return 'Current '
+                           + entity.attributes.current_temperature
+                           + entity.attributes.unit_of_measurement;
                      }
                   },
                ]
@@ -139,44 +121,7 @@ var CONFIG = {
                height: 3,
                items: [
                   {
-                     // please read README.md for more information
-                     // this is just an example
-                     position: [0, 0],
-                     height: 2, // 1 for compact
-                     //classes: ['-compact'],
-                     type: TYPES.WEATHER,
-                     id: {},
-                     state: function () {return 'Sunny'}, // https://github.com/resoai/TileBoard/wiki/Anonymous-functions
-                     icon: 'clear-day',
-                     icons: { 'clear-day': 'clear'},
-                     fields: {
-                        summary: 'Sunny',
-                        temperature: '18',
-                        temperatureUnit: 'C',
-                        windSpeed: '5',
-                        windSpeedUnit: 'kmh',
-                        humidity: '50',
-                        humidityUnit: '%',
-                        list: [
-                           'Feels like 16 C'
-                           /*
-                           'Feels like '
-                              + '&sensor.dark_sky_apparent_temperature.state'
-                              + '&sensor.dark_sky_apparent_temperature.attributes.unit_of_measurement',
-
-                           'Pressure '
-                              + '&sensor.dark_sky_pressure.state'
-                              + '&sensor.dark_sky_pressure.attributes.unit_of_measurement',
-
-                           '&sensor.dark_sky_precip_probability.state'
-                              + '&sensor.dark_sky_precip_probability.attributes.unit_of_measurement'
-                              + ' chance of rain'
-                           */
-                        ]
-                     }
-                  },
-                  {
-                    position: [1, 0],
+                    position: [0, 0],
                     width: 2,
                     height: 2,
                     id: 'media_player.spotify',
