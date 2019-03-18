@@ -97,7 +97,7 @@ var CONFIG = {
                      state: function (item, entity) {
                         return 'Current '
                            + entity.attributes.current_temperature
-                           + 'C';
+                           + ' °C';
                      }
                   },
                   {
@@ -109,7 +109,7 @@ var CONFIG = {
                      state: function (item, entity) {
                         return 'Current '
                            + entity.attributes.current_temperature
-                           + 'C';
+                           + ' °C';
                      }
                   },
                ]
